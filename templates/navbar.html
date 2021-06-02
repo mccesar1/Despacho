@@ -1,0 +1,36 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="{% static 'images/3.png' %}" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      <li class="nav-item {% if request.path == '/welcome' %} active {% endif %}">
+        <a class="nav-link" href="/welcome">AV CONTADORES </a>
+      </li>
+      <li class="nav-item {% if request.path == '/reportes' %} active {% endif %}">
+        <a class="nav-link" href="/reportes">Reportes mensuales </a>
+      </li>
+      <li class="nav-item {% if request.path == '/declaraciones' %} active {% endif %}">
+        <a class="nav-link" href="/declaraciones">Declaraciones mensuales</a>
+      </li>
+
+    </ul>
+
+    <span class="navbar-text  ml-auto" style="color: white"  >
+      Bienvenido {{request.user.username}}
+    </span>
+
+
+  </div>
+
+
+</nav>
+
+
+
+</body>
+

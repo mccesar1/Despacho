@@ -1,0 +1,28 @@
+{%  extends 'main.html' %}
+
+{% block content %}
+<div class="row my-4">
+   {% for datos in datos %}
+{% if forloop.counter < 5 %}
+			<!-- News box -->
+			<div class="col-md-3">
+				<div class="card mb-3 shadow">
+				<img  src="/static/images/pdf2.png" class="card-img-top" alt="{{datos.mes}}">
+				<div class="card-body">
+					<h5 class="card-title">{{datos.mes}} {{datos.año}}</h5>
+					<hr/>
+					<div class="row my-2">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<p class="card-text"><a href="/media/{{datos.archivo}}"  class="btn btn-sm btn-primary">Ver</a></p>
+						<p> </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<p class="card-text"><a href="/media/{{datos.archivo}}" download class="btn btn-sm btn-primary">Descargar</a></p>
+						</div>
+				</div>
+				</div>
+			</div>
+			{% endif %}
+
+    {% endfor %}
+</div>
+
+{% endblock %}

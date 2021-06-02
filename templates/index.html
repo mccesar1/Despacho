@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Despacho</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body>
+<div style="background-image: url({% static 'images/banner.png' %});">
+
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<img src="{% static 'images/4.png' %}" alt="">
+
+					</header>
+
+					<footer>
+						<a href="/login" class="button">Iniciar sesion</a>
+					</footer>
+				</div>
+			</section>
+
+
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="static/images/pic01.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Los mejores profesionales  <br /> de la region</h3>
+							</header>
+							<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
+
+						</article>
+						<article>
+							<div class="image round">
+								<img src="static/images/pic02.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Contamos con nuestro<br /> propio sitio web</h3>
+							</header>
+							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
+
+						</article>
+					</div>
+				</div>
+			</section>
+
+	<style>
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+</style>
+	<div class="center" >
+	<a  href="/contacto" class="button">Contactenos</a>
+		</div>
+</div>
+
+		<!-- Footer -->
+
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>

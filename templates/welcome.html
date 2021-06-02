@@ -1,0 +1,18 @@
+{%  extends 'main.html' %}
+
+
+
+   {% block content %}
+
+
+
+    <h2>Área para miembros</h2>
+
+<p>
+    
+    Bienvenido <b>{{request.user.username}}
+
+
+    esta página es exclusiva para usuarios registrados.
+
+  {% endblock %}
